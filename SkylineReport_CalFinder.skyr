@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<views>
+  <view name="CalFinder" rowsource="pwiz.Skyline.Model.Databinding.Entities.Precursor" sublist="Results!*" uimode="small_molecules">
+    <column name="Peptide" />
+    <column name="Results!*.Value.PeptideResult.ResultFile.Replicate" />
+    <column name="Results!*.Value.PeptideResult.ResultFile.Replicate.SampleType" />
+    <column name="Results!*.Value.PeptideResult.ResultFile.Replicate.AnalyteConcentration" />
+    <column name="Results!*.Value.PeptideResult.Quantification.Accuracy" />
+    <column name="Results!*.Value.PeptideResult.ExcludeFromCalibration" />
+    <column name="Peptide.CalibrationCurve.Slope" />
+    <column name="Peptide.CalibrationCurve.Intercept" />
+    <column name="Peptide.CalibrationCurve.RSquared" />
+    <column name="Peptide.FiguresOfMerit.LimitOfDetection" />
+    <column name="Peptide.FiguresOfMerit.LimitOfQuantification" />
+    <column name="Results!*.Value.TotalArea" />
+  </view>
+</views>
